@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Tic Tac Toe</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue-50:  #eff6ff; --blue-100: #dbeafe; --blue-200: #bfdbfe;
+    --blue-300: #93c5fd; --blue-500: #3b82f6; --blue-600: #2563eb;
+    --blue-700: #1d4ed8; --blue-900: #0f2c66; --muted: #6b8cb8;
+  }
+
+  body {
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #fff;
+    color: #1e293b;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 28px 80px;
+  }
+
+  .header {
+    padding-bottom: 24px;
+    border-bottom: 2px solid var(--blue-100);
+    margin-bottom: 32px;
+  }
+
+  .brand {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 6px 14px 6px 8px;
+    background: var(--blue-50); border: 1px solid var(--blue-100);
+    border-radius: 999px;
+    font-size: .78rem; font-weight: 700;
+    color: var(--blue-700);
+    margin-bottom: 18px;
+  }
+  .brand-icon {
+    width: 26px; height: 26px;
+    display: grid; place-items: center;
+    background: var(--blue-600); color: #fff;
+    border-radius: 8px; font-size: .85rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -.03em;
+    color: var(--blue-900);
+    margin-bottom: 8px;
+  }
+
+  .meta {
+    font-size: .85rem;
+    color: var(--muted);
+  }
+  .meta strong { color: var(--blue-700); }
+
+  .toc {
+    padding: 18px 22px;
+    background: var(--blue-50);
+    border: 1px solid var(--blue-100);
+    border-radius: 14px;
+    margin-bottom: 36px;
+  }
+  .toc-title {
+    font-size: .7rem; font-weight: 800;
+    letter-spacing: .12em; text-transform: uppercase;
+    color: var(--blue-500); margin-bottom: 10px;
+  }
+  .toc ol { margin-left: 18px; }
+  .toc li { margin: 4px 0; font-size: .87rem; }
+  .toc a {
+    color: var(--blue-700); text-decoration: none; font-weight: 600;
+  }
+  .toc a:hover { text-decoration: underline; }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--blue-900);
+    margin: 40px 0 14px;
+    padding-top: 8px;
+    letter-spacing: -.01em;
+    scroll-margin-top: 20px;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--blue-700);
+    margin: 22px 0 10px;
+  }
+
+  p { margin-bottom: 14px; }
+  ul, ol { margin: 0 0 16px 22px; }
+  li { margin-bottom: 6px; }
+
+  strong { color: var(--blue-900); font-weight: 700; }
+
+  a { color: var(--blue-600); }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .85em;
+    background: var(--blue-50);
+    padding: 2px 6px;
+    border-radius: 5px;
+    color: var(--blue-700);
+  }
+
+  .callout {
+    padding: 14px 18px;
+    margin: 18px 0;
+    background: var(--blue-50);
+    border-left: 3px solid var(--blue-500);
+    border-radius: 8px;
+    font-size: .9rem;
+    color: var(--blue-900);
+  }
+  .callout.warn {
+    background: #fffbeb;
+    border-left-color: #f59e0b;
+    color: #78350f;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 22px;
+    font-size: .85rem;
+    border: 1px solid var(--blue-100);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  th {
+    text-align: left;
+    padding: 10px 14px;
+    background: var(--blue-50);
+    color: var(--blue-700);
+    font-size: .7rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--blue-100);
+  }
+  td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--blue-100);
+    vertical-align: top;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+
+  .footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--blue-100);
+    font-size: .8rem;
+    color: var(--muted);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="header">
+    <div class="brand">
+      <div class="brand-icon">✦</div>
+      Tic Tac Toe
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      <strong>Effective date:</strong> [EFFECTIVE DATE] &nbsp;·&nbsp;
+      <strong>Last updated:</strong> [LAST UPDATED DATE]
+    </p>
+  </header>
+
+  <nav class="toc">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#collect">Information We Collect</a></li>
+      <li><a href="#use">How We Use Your Information</a></li>
+      <li><a href="#legal">Legal Basis for Processing</a></li>
+      <li><a href="#storage">How We Store and Protect Your Data</a></li>
+      <li><a href="#retention">How Long We Keep Your Data</a></li>
+      <li><a href="#sharing">Third-Party Services</a></li>
+      <li><a href="#cookies">Cookies and Local Storage</a></li>
+      <li><a href="#rights">Your Rights and Choices</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#international">International Data Transfers</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <h2>1. Overview</h2>
+    <p>
+      Tic Tac Toe ("<strong>the Game</strong>", "<strong>we</strong>", "<strong>us</strong>", or
+      "<strong>our</strong>") is a free browser-based game that can be played locally, against
+      a computer opponent, or online against other players.
+    </p>
+    <p>
+      This Privacy Policy explains what information we collect when you use the Game,
+      why we collect it, how we use and protect it, and what choices you have.
+      By using the Game you agree to the practices described in this policy.
+    </p>
+    <div class="callout">
+      <strong>In short:</strong> We collect only what's needed to run online multiplayer
+      and a friends system. We don't ask for your name, email, phone number, or any
+      payment information. We don't sell your data. We don't show ads.
+    </div>
+  </section>
+
+  <section id="collect">
+    <h2>2. Information We Collect</h2>
+
+    <h3>2.1 Information you provide</h3>
+    <p>When you use the Game, you may provide:</p>
+    <ul>
+      <li>
+        <strong>Display name</strong> — a nickname you choose. This is optional and
+        defaults to an auto-generated name. It can be anything, including a pseudonym.
+        <em>Please do not use your real name if you don't want it visible to other players.</em>
+      </li>
+      <li>
+        <strong>Friend code</strong> — a 6-character code that the Game generates
+        automatically so other players can add you as a friend.
+      </li>
+    </ul>
+
+    <h3>2.2 Information collected automatically</h3>
+    <p>When you use the online features, the Game automatically generates and stores:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Anonymous user ID</strong></td>
+          <td>A random identifier assigned by Firebase Authentication. It is not linked to your real identity, email, or device.</td>
+        </tr>
+        <tr>
+          <td><strong>Online status</strong></td>
+          <td>Whether you are currently online or offline, and the last time you were seen. Shown to your friends.</td>
+        </tr>
+        <tr>
+          <td><strong>Friends list</strong></td>
+          <td>The list of players you have added as friends.</td>
+        </tr>
+        <tr>
+          <td><strong>Game data</strong></td>
+          <td>Room codes, board state, scores, and match results for online games.</td>
+        </tr>
+        <tr>
+          <td><strong>Technical data</strong></td>
+          <td>IP address, browser type, and general device information, collected automatically by Firebase for security and abuse prevention.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>2.3 What we do <em>not</em> collect</h3>
+    <p>We do not collect or request:</p>
+    <ul>
+      <li>Your real name, email address, or phone number</li>
+      <li>Your physical address or precise location</li>
+      <li>Payment or financial information</li>
+      <li>Your contacts, photos, camera, or microphone</li>
+      <li>Advertising identifiers or cross-site tracking data</li>
+    </ul>
+  </section>
+
+  <section id="use">
+    <h2>3. How We Use Your Information</h2>
+    <p>We use the information we collect solely to:</p>
+    <ul>
+      <li>Create and maintain your anonymous account</li>
+      <li>Enable online multiplayer matches</li>
+      <li>Let you add friends and see when they are online</li>
+      <li>Let friends invite you to game rooms</li>
+      <li>Detect and prevent abuse, cheating, or misuse of the Game</li>
+      <li>Diagnose technical problems and improve stability</li>
+    </ul>
+    <p>
+      We do <strong>not</strong> use your information for advertising, profiling,
+      or any purpose unrelated to running the Game.
+    </p>
+  </section>
+
+  <section id="legal">
+    <h2>4. Legal Basis for Processing</h2>
+    <p>
+      If you are located in the European Economic Area (EEA), the United Kingdom,
+      or Switzerland, we process your information under the following legal bases:
+    </p>
+    <ul>
+      <li><strong>Contract</strong> — to provide the Game you are using</li>
+      <li><strong>Legitimate interests</strong> — to keep the Game secure and prevent abuse</li>
+      <li><strong>Consent</strong> — where required, such as for optional features</li>
+    </ul>
+    <p>You may withdraw consent at any time by ceasing to use the Game.</p>
+  </section>
+
+  <section id="storage">
+    <h2>5. How We Store and Protect Your Data</h2>
+    <p>
+      All game data is stored in <strong>Google Firebase Realtime Database</strong>,
+      a cloud service provided by Google LLC. Data is encrypted in transit using
+      HTTPS/TLS. Firebase applies industry-standard security measures to protect
+      stored data.
+    </p>
+    <p>
+      Access to your data is restricted by Firebase Security Rules. Other players
+      can only see your display name, friend code, and online status. Only you can
+      read or write your friends list.
+    </p>
+    <p>
+      While we take reasonable steps to protect your information, no system is
+      completely secure. We cannot guarantee absolute security.
+    </p>
+  </section>
+
+  <section id="retention">
+    <h2>6. How Long We Keep Your Data</h2>
+    <p>We keep your data only as long as necessary:</p>
+    <ul>
+      <li><strong>Anonymous account and profile</strong> — until you request deletion or the Game is discontinued</li>
+      <li><strong>Game rooms</strong> — deleted automatically after 30 days of inactivity, or sooner if an administrator clears them</li>
+      <li><strong>Online status</strong> — updated in real time and set to "offline" when you close the Game</li>
+      <li><strong>Ban records</strong> — kept while a ban is active and removed when lifted</li>
+    </ul>
+  </section>
+
+  <section id="sharing">
+    <h2>7. Third-Party Services</h2>
+    <p>The Game uses the following third-party services:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Provider</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Firebase Authentication</strong></td>
+          <td>Google LLC</td>
+          <td>Anonymous sign-in</td>
+        </tr>
+        <tr>
+          <td><strong>Firebase Realtime Database</strong></td>
+          <td>Google LLC</td>
+          <td>Storing profiles, friends, rooms, and game state</td>
+        </tr>
+        <tr>
+          <td><strong>Google Fonts / CDN</strong></td>
+          <td>Google LLC</td>
+          <td>Loading JavaScript libraries</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      These providers may collect technical information such as your IP address
+      as part of normal operation. Their handling of that data is governed by
+      Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+    </p>
+    <p>
+      We do not sell, rent, or share your personal information with any other
+      third party, except where required by law.
+    </p>
+  </section>
+
+  <section id="cookies">
+    <h2>8. Cookies and Local Storage</h2>
+    <p>
+      The Game does not use tracking cookies. Firebase Authentication may store
+      a session token in your browser's local storage to keep you signed in
+      between visits. This token is required for the Game to function and does
+      not contain personal information.
+    </p>
+    <p>
+      You can clear this token at any time by clearing your browser's site data.
+      Doing so will sign you out and generate a new anonymous account.
+    </p>
+  </section>
+
+  <section id="rights">
+    <h2>9. Your Rights and Choices</h2>
+    <p>Depending on where you live, you may have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> the personal data we hold about you</li>
+      <li><strong>Correct</strong> inaccurate data (e.g., change your display name)</li>
+      <li><strong>Delete</strong> your data</li>
+      <li><strong>Object</strong> to or <strong>restrict</strong> processing</li>
+      <li><strong>Data portability</strong> — receive your data in a portable format</li>
+      <li><strong>Withdraw consent</strong> at any time</li>
+    </ul>
+
+    <h3>How to delete your data</h3>
+    <p>
+      You can delete your account and all associated data at any time by
+      contacting us at <strong>[CONTACT EMAIL]</strong>. We will process your
+      request within 30 days.
+    </p>
+    <p>
+      You can also remove individual data yourself:
+    </p>
+    <ul>
+      <li>Change or reset your display name from the Friends screen</li>
+      <li>Remove friends from your friends list</li>
+      <li>Clear your browser's local storage to sign out and drop the session</li>
+    </ul>
+  </section>
+
+  <section id="children">
+    <h2>10. Children's Privacy</h2>
+    <p>
+      The Game is not directed at children under the age of 13 (or the minimum
+      age in your country). We do not knowingly collect personal information
+      from children under 13.
+    </p>
+    <p>
+      Because the Game uses anonymous accounts and does not request any personal
+      information, it is designed to be safe for general audiences. However, if
+      you are a parent or guardian and believe your child has provided us with
+      personal information, please contact us at <strong>[CONTACT EMAIL]</strong>
+      and we will delete it promptly.
+    </p>
+    <div class="callout warn">
+      <strong>Parents:</strong> The Game includes a chat-free friends system and
+      anonymous multiplayer. We recommend supervising younger children and
+      reminding them not to share personal information in their display name.
+    </div>
+  </section>
+
+  <section id="international">
+    <h2>11. International Data Transfers</h2>
+    <p>
+      Your information is stored on Google Firebase servers, which may be located
+      outside your country of residence. By using the Game, you consent to the
+      transfer of your information to these servers. Google LLC complies with
+      applicable data protection frameworks for international transfers.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2>12. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, we will
+      update the "Last updated" date at the top of this page. Material changes
+      will be announced in the Game. Continued use of the Game after changes
+      take effect constitutes acceptance of the revised policy.
+    </p>
+    <p>
+      We encourage you to review this page periodically.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>13. Contact Us</h2>
+    <p>
+      If you have any questions, concerns, or requests regarding this Privacy
+      Policy or your data, please contact:
+    </p>
+    <p>
+      <strong>Email:</strong> [CONTACT EMAIL]<br>
+      <strong>Website:</strong> [YOUR WEBSITE URL]
+    </p>
+    <p>
+      We will respond to all requests within 30 days.
+    </p>
+  </section>
+
+  <footer class="footer">
+    © [YEAR] Tic Tac Toe. All rights reserved.
+  </footer>
+
+</div>
+</body>
+</html>
